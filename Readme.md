@@ -1,4 +1,3 @@
-Aquí te dejo el `README.md` actualizado con los cambios realizados en el archivo `docker-compose.yml` y las nuevas configuraciones recomendadas:
 
 ---
 
