@@ -42,12 +42,16 @@ services:
       - "3389:3389/udp"
     volumes:
       - /tmp/docker-data:/mnt/disco1
+    devices:
+      - /dev/kvm
+      - /dev/net/tun
     deploy:
       resources:
         limits:
           memory: 4G
           cpus: "4.0"
     stop_grace_period: 2m
+
 
 
 
