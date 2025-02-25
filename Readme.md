@@ -57,8 +57,8 @@ services:
     container_name: windows
     environment:
       VERSION: "10"
-      USERNAME: "Ghosthat"
-      PASSWORD: "cristofer089"
+      USERNAME: "yourusername"
+      PASSWORD: "yourpassword"
     cap_add:
       - NET_ADMIN
     ports:
