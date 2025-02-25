@@ -1,4 +1,3 @@
-Entendido, aquí te dejo la información organizada de manera más llamativa y clara:
 
 ---
 
