@@ -1,3 +1,4 @@
+<h1>
 una vez abras codespace en la terminal escribe:
 1- df -h
 y elije la particion que mas almacenamiento tenga
@@ -59,3 +60,5 @@ services:
 luego ejecuta: docker-compose -f windows10.yml up
 
 docker start windows
+
+</h1>
