@@ -51,8 +51,6 @@
 Crea un archivo llamado `windows10.yml` con el siguiente contenido:
 
 ```yaml
-version: '3.8'
-
 services:
   windows:
     image: dockurr/windows
@@ -61,6 +59,8 @@ services:
       VERSION: "10"
       USERNAME: ${WINDOWS_USERNAME}   # Usa un archivo .env para variables sensibles
       PASSWORD: ${WINDOWS_PASSWORD}   # Usa un archivo .env para variables sensibles
+      RAM_SIZE: "4G"
+      CPU_CORES: "4"
     cap_add:
       - NET_ADMIN
     ports:
@@ -72,15 +72,11 @@ services:
     devices:
       - "/dev/kvm:/dev/kvm"  # Solo si realmente necesitas acceso a KVM
       - "/dev/net/tun:/dev/net/tun"  # Solo si necesitas acceso a interfaces de red virtual
-    deploy:
-      resources:
-        limits:
-          memory: 4G
-          cpus: "4.0"
     stop_grace_period: 2m
 
 volumes:
   windows-data:  # Define el volumen en caso de que no exista
+
 ```
 
 ---
