@@ -73,9 +73,11 @@ services:
       - "/dev/kvm:/dev/kvm"  # Solo si realmente necesitas acceso a KVM
       - "/dev/net/tun:/dev/net/tun"  # Solo si necesitas acceso a interfaces de red virtual
     stop_grace_period: 2m
+    restart: always
 
 volumes:
   windows-data:  # Define el volumen en caso de que no exista
+
 
 ```
 
