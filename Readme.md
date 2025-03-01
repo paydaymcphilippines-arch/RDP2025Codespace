@@ -88,8 +88,8 @@ volumes:
 Crea un archivo `.env` en la misma carpeta donde se encuentra `windows10.yml` para definir las variables de entorno sensibles, como el nombre de usuario y la contraseña:
 
 ```ini
-WINDOWS_USERNAME=Ghosthat
-WINDOWS_PASSWORD=cristofer089
+WINDOWS_USERNAME=YourUsername
+WINDOWS_PASSWORD=YourPassword
 ```
 
 Este archivo no debe subirse a repositorios públicos por razones de seguridad. Asegúrate de incluirlo en tu `.gitignore` si estás trabajando con control de versiones.
